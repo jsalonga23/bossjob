@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import JobsListItem from './JobsListItem';
+import Search from '../Search';
 
 class JobsList extends Component {
     constructor(props) {
@@ -28,6 +29,7 @@ class JobsList extends Component {
 
     return (
       <div>
+        <Search />
         {jobItems}
       </div>
     );
