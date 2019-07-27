@@ -17,6 +17,7 @@ export default function(state = initialState, action) {
                  jobCount: action.payload.total_num
              }
 
+
         default:
             return state;
 

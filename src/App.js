@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Header from './shared/components/Header'
-import JobsList from './shared/components/Jobs/JobsList'
+import Header from './shared/components/Header';
+import JobsList from './shared/components/Jobs/JobsList';
 import store from './Store';
 
 import { Provider } from 'react-redux';
