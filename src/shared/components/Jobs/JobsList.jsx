@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import JobsListItem from './JobsListItem';
 import Search from '../Search';
+import Filter from '../Filter';
 
 import { fetchJobs } from '../../../actions/jobActions';
 import { connect } from 'react-redux';
@@ -23,8 +24,16 @@ class JobsList extends Component {
 
     return (
       <div>
-        <Search />
-        {jobItems}
+        <div className="search-wrapper">
+            <Search />
+            <div className="filter-container">
+                <Filter />
+            </div>
+        </div>
+        <div className="wrapper-result">
+            <p className="jobCount bold border-bottom">{this.props.jobsCount} found</p>
+            {jobItems}
+        </div>
       </div>
     );
   }

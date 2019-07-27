@@ -16,12 +16,10 @@ class Search extends Component {
 
     return (
         <div>
-            <div className="search-wrapper">
-              <div className="inputgroup">
-                  <span><i className="fa fa-search" aria-hidden="true"></i></span>
-                  <input type="text" placeholder="Search for job title or company name" value={query} onChange={this.handleSearch} />
-              </div>
-            </div>
+          <div className="inputgroup">
+              <span><i className="fa fa-search" aria-hidden="true"></i></span>
+              <input type="text" placeholder="Search for job title or company name" value={query} onChange={this.handleSearch} />
+          </div>
         </div>
     );
   }

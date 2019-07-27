@@ -9,6 +9,62 @@
   min-height: 700px;
 }
 /* John CSS */
+/* General */
+p {
+    font-size: 13px;
+    color: #333333;
+}
+.bold {
+    font-weight: bold;
+}
+.border-bottom {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 15px;
+}
+.text-right {
+    text-align: right;
+}
+.column-wrapper {
+    display: flex;
+}
+.column-wrapper .column-2:first-child {
+    padding-left: 0px;
+}
+.column-wrapper .column-2:last-child {
+    padding-right: 0px;
+}
+.column-2 {
+    width: 50%;
+}
+.sm-margin-bottom-top {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.no-margin-bottom-top {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.margin-bottom-sm {
+    margin-bottom: 15px;
+}
+/* End General */
+.wrapper-result {
+    padding: 10px 25px;
+}
+.btnFilter {
+    margin: 30px 0px 10px;
+    display: inline-block;
+    border: 1px solid #2378ea;
+    width: 90%;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.jobWrapper i {
+    color: #2379ea;
+}
 .search-wrapper {
     background-color: #f9f9f9;
         padding: 0px 20px 20px;
@@ -21,6 +77,9 @@
     position: relative;
     top: 25px;
         color: #2379ea;
+}
+.jobDate {
+    color: #b5b5b5;
 }
 .search-wrapper input {
     display: block;

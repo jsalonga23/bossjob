@@ -2,7 +2,7 @@ import { GET_JOB_LIST, GET_JOB_SUCCESS, GET_JOB_FAILED } from '../actions/types'
 
 const initialState = {
     items: [],
-    jobCount: '',
+    jobsCount: '',
 }
 
 export default function(state = initialState, action) {
@@ -14,7 +14,7 @@ export default function(state = initialState, action) {
              return {
                  ...state,
                  items: action.payload.jobs,
-                 jobCount: action.payload.total_num
+                 jobsCount: action.payload.total_num
              }
 
 
