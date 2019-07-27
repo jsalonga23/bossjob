@@ -31,7 +31,7 @@ class JobsList extends Component {
             </div>
         </div>
         <div className="wrapper-result">
-            <p className="jobCount bold border-bottom">{this.props.jobsCount} found</p>
+            <p className="jobCount bold border-bottom">{this.props.jobsCount} jobs found</p>
             {jobItems}
         </div>
       </div>

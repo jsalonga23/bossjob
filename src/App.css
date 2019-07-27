@@ -61,13 +61,14 @@ p {
     border-radius: 40px;
     text-decoration: none;
     font-size: 14px;
+    background: transparent;
 }
 .jobWrapper i {
     color: #2379ea;
 }
 .search-wrapper {
     background-color: #f9f9f9;
-        padding: 0px 20px 20px;
+    padding: 0px 20px 20px;
     box-shadow: 0px 4px 4px -2px #e4e4e4;
 }
 .inputgroup {
@@ -76,7 +77,7 @@ p {
 .inputgroup span {
     position: relative;
     top: 25px;
-        color: #2379ea;
+    color: #2379ea;
 }
 .jobDate {
     color: #b5b5b5;
@@ -85,7 +86,17 @@ p {
     display: block;
     width: 90%;
     border: none;
-        padding: 10px 0px 15px 30px;
+    padding: 10px 0px 15px 30px;
     background: transparent;
     border-bottom: 1px solid #e2e2e2;
+    outline: none;
+}
+.companyLogo {
+    max-width: 55px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.companyLogo img {
+    width: 100%;
 }

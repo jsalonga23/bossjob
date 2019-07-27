@@ -1,4 +1,4 @@
-import { GET_JOB_LIST, GET_JOB_SUCCESS, GET_JOB_FAILED } from '../actions/types';
+import { GET_JOB_LIST, GET_JOB_FAILED } from '../actions/types';
 
 const initialState = {
     items: [],
@@ -8,16 +8,17 @@ const initialState = {
 export default function(state = initialState, action) {
 
     switch(action.type) {
-
         case GET_JOB_LIST:
-
              return {
                  ...state,
-                 items: action.payload.jobs,
-                 jobsCount: action.payload.total_num
+                 items: action.payload.data.jobs,
+                 jobsCount: action.payload.data.total_num
              }
-
-
+         case GET_JOB_FAILED:
+             return {
+                 ...state,
+                 items: [],
+             }
         default:
             return state;
 

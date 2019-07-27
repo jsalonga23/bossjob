@@ -54,7 +54,14 @@ class JobsListItem extends Component {
             </div>
             <div className="column-wrapper">
                 <div className="column column-2">
-                    <p className="jobCompany">{this.props.job.company_name}</p>
+                    <table className="jobCompany">
+                        <tbody>
+                            <tr>
+                                <td><span className="companyLogo"><img src={this.props.job.company_logo} alt=""/></span></td>
+                                <td><p>{this.props.job.company_name}</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div className="column column-2">
                     <p className="text-right jobDate">{this.timeFormat(this.props.job.job_created_at)}</p>

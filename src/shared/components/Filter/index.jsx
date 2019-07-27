@@ -9,7 +9,7 @@ class Filter extends Component {
     return (
         <div>
 
-            <a href="#" className="btnFilter">Filter Results</a>
+            <button className="btnFilter">Filter Results</button>
 
         </div>
     );
