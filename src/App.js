@@ -16,6 +16,7 @@ class App extends Component {
         <div className="App-Wrapper">
           <Header />
           <JobsList />
+
         </div>
       </div>
     </Provider>

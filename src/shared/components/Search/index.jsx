@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import { getJobs } from '../../../actions/jobActions';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import _ from 'lodash';
 
 class Search extends Component {
 
     handleSearch = (e) => {
         // console.log(e.target.value);
-        this.props.doGetJobs(e.target.value);
+        // this.props.doGetJobs(e.target.value);
+        const debouncedGetJob = _.debounce(this.props.doGetJobs, 100);
+        debouncedGetJob(e.target.value);
     }
 
   render() {

@@ -3,6 +3,8 @@ import JobsListItem from './JobsListItem';
 import Search from '../Search';
 import Filter from '../Filter';
 
+import Pagination from '../Pagination';
+
 import { fetchJobs } from '../../../actions/jobActions';
 import { connect } from 'react-redux';
 
@@ -33,7 +35,11 @@ class JobsList extends Component {
         <div className="wrapper-result">
             <p className="jobCount bold border-bottom">{this.props.jobsCount} jobs found</p>
             {jobItems}
+            <div className="pagination-wrapper">
+                <Pagination />
+            </div>
         </div>
+
       </div>
     );
   }

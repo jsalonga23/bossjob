@@ -71,6 +71,9 @@ p {
     padding: 0px 20px 20px;
     box-shadow: 0px 4px 4px -2px #e4e4e4;
 }
+.search-wrapper {
+    padding: 0px 20px 20px;
+}
 .inputgroup {
     position: relative;
 }
